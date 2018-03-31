@@ -1,0 +1,14 @@
+<nav class="navbar navbar-default navbar-fixed-bottom" id="footer">
+	<div class="container-fluid">
+		<div class="row">
+			<div class="center col-xs-4" routerLinkActive="active">
+				<a appSocial><img (click)="toggleFooter()"
+					src="" class="plusSign"
+					style="cursor: pointer;" alt="Plus Sign">+</a>
+			</div>
+		</div>
+	</div>
+	<div class="footer" [@toggleState]="footerToggle.displaySocial">
+		
+	</div>
+</nav>
